@@ -7,6 +7,8 @@ cardForm.addEventListener('submit',function(e){
       const tit = cardForm.elements.title;
       const pos = cardForm.elements.description;
       addnew(tit.value, pos.value);
+      tit.value='';
+      pos.value='';
 })
 
 const addnew = (t , d) => {
